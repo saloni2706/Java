@@ -1,6 +1,29 @@
 public class IfElse {
     public static void main(String[] args) {
+
+
+        //Nested if-else
+
+            int num=8;
+
+            if(num>=5);{
+                if(num>=6){
+                    System.out.println("big number");
+
+                }
+                else{
+                    System.out.println("Number is either 5 or 6");
+                }
+            }
+
         
+
+
+
+
+
+
+
         boolean tired= false;
 
         if(tired){
