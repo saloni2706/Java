@@ -1,41 +1,28 @@
+class Smartphone {
 
-public class Gadget {
-    public static void main(String[] args) {
-    
-        
-        Smartphone phone1;
-        
-        phone1= new Smartphone("Note10","Samsung", 50000,6, "Black");
-        
-        phone1.Details();
+    String modelName;
+    String brandName;
+    int price;
+    int screenSize;
+    String color;
 
-        Smartphone phone2= new Smartphone("Iphone11","Apple",70000,6,"Red");
-
-        phone2.model_name="Iphone11";
-        phone2.brand_name="Apple";
-        phone2.price= 70000;
-        phone2.colour="Red";
-        phone2.screensize_inches=6;
-
-        phone2.TurnOff();
-        phone2.Details();
-
-
-
-        
-
-        
-
-
-        
-
-
-
-
-
-
-
-
+    Smartphone(String modelName, String brandName, int price, int screenSize, String color) {
+        this.modelName = modelName;
+        this.brandName = brandName;
+        this.price = price;
+        this.screenSize = screenSize;
+        this.color = color;
     }
-    
+
+    void Details() {
+        System.out.println("Model Name : " + modelName);
+        System.out.println("Brand Name : " + brandName);
+        System.out.println("Price      : " + price);
+        System.out.println("Screen Size: " + screenSize + " inches");
+        System.out.println("Color      : " + color);
+    }
+
+    void TurnOff() {
+        System.out.println(modelName + " is turning off...");
+    }
 }
